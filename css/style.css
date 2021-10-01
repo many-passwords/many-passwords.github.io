@@ -38,7 +38,6 @@ h1, h2 {
 /*
 ** Loading Animation Styles
 */
-
 #loader {
   display: flex;
   justify-content: center;
@@ -77,6 +76,7 @@ h1, h2 {
   from {
     transform: translateY(30px);
   }
+
   to {
     transform: translateY(0px);
   }
@@ -93,21 +93,20 @@ h1, h2 {
 /*
 ** Navbar Styles
 */
-
 #navbar {
-    position: relative;
-    background-color: var(--foreground-color);
-    padding: 10px;
-    list-style-type: none;
-    text-align: center;
+  position: relative;
+  background-color: var(--foreground-color);
+  padding: 10px;
+  list-style-type: none;
+  text-align: center;
 }
 
 #navbar li {
-    float: left;
-    width: auto;
-    padding: 20px;
-    margin: 2px 2px;
-    border-radius: 5px;
+  float: left;
+  width: auto;
+  padding: 20px;
+  margin: 2px 2px;
+  border-radius: 5px;
 }
 
 #navbar a {
@@ -116,7 +115,7 @@ h1, h2 {
 }
 
 #navbar a:visited {
-  color:inherit;
+  color: inherit;
 }
 
 #navbar li:hover {
@@ -125,7 +124,6 @@ h1, h2 {
 
 #navbar li.search {
   float: right;
-
   padding: 0;
   width: 15%;
   max-width: 350px;
@@ -144,7 +142,6 @@ h1, h2 {
 /*
 ** Data Styles
 */
-
 .container {
   justify-content: center;
   max-width: 70%;
@@ -158,9 +155,9 @@ h1, h2 {
 }
 
 #count-output {
-  background-color:#67706f;
-  border-radius:3px;
-  padding:2px 4px;
+  background-color: #67706f;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 
 .model-info {
@@ -191,16 +188,15 @@ h1, h2 {
 /*
 ** Floating Button
 */
-
 .float-button {
-  position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right: 30px;
-	background-color:var(--text-color);
-  border-radius:50px;
-  text-align:center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 30px;
+  background-color: var(--text-color);
+  border-radius: 50px;
+  text-align: center;
   display: none;
 }
 
@@ -224,7 +220,6 @@ h1, h2 {
 /*
 ** Responsiveness
 */
-
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
     max-width: 100%;
@@ -238,7 +233,7 @@ h1, h2 {
     float: none;
   }
 
-  #navbar li.search{
+  #navbar li.search {
     width: 100%;
     float: left;
     max-width: none;
