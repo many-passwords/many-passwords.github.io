@@ -221,14 +221,14 @@ h1 {
   vertical-align: middle;
 }
 
-.about {
+.about, .navigation, .contributors {
   padding: 20px;
   border-radius: 20px;
   font-size: 20px;
   background: var(--foreground-color);
 }
 
-.about ul {
+.contributors ul {
   padding: 10px 0;
 }
 
