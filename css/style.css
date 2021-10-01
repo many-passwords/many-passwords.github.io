@@ -18,23 +18,12 @@ body {
   background-attachment: fixed;
 }
 
-header {
-  margin-top: 15px;
-  text-align: center;
-}
-
-h2 {
+h1, h2 {
   font-family: 'Permanent Marker', cursive;
   color: var(--title-color);
   font-size: max(2.25rem, 6vw);
   margin: 30px 0;
   text-align: center;
-}
-
-h1 {
-  font-family: 'Permanent Marker', cursive;
-  color: var(--title-color);
-  font-size: max(2.25rem, 6vw);
 }
 
 #logo {
