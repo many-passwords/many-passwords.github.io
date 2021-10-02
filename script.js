@@ -80,17 +80,21 @@ async function loadEntryCount() {
 function search_entries() {
   let base_element = document.getElementsByClassName("search");
   let input = base_element[0].getElementsByTagName("input")[0].value;
-  input = input.toLowerCase();
+  input = input.trim().toLowerCase();   // Using trim() for removing any surrounding whitespaces, and toLowerCase() for converting its case to lowercase so as to perform a case-insensitive search
 
   let data = document.getElementById("output").childNodes;
+  let result_count = 0;
 
   for (i = 0; i < data.length; i++) {
     if (!data[i].innerHTML.toLowerCase().includes(input)) {
       data[i].style.display = "none";
     } else {
       data[i].style.display = "inline";
+      result_count++;
     }
   }
+
+  $('#no-output').css('display', (result_count>0)?'none':'block'); // setting display css property for 'no results found ...' <div> block based on result_count using jQuery, Shorthand for: if (result_count==0) $('#no-output').css('display', 'block'); else $('#no-output').css('display', 'none');
 }
 
 $(window).scroll(function (event) {
