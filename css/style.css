@@ -18,22 +18,12 @@ body {
   background-attachment: fixed;
 }
 
-header {
-  margin-top: 15px;
-  text-align: center;
-}
-
-header h2{
+h1, h2 {
   font-family: 'Permanent Marker', cursive;
   color: var(--title-color);
   font-size: max(2.25rem, 6vw);
   margin: 30px 0;
-}
-
-h1 {
-  font-family: 'Permanent Marker', cursive;
-  color: var(--title-color);
-  font-size: max(2.25rem, 6vw);
+  text-align: center;
 }
 
 #logo {
@@ -48,7 +38,6 @@ h1 {
 /*
 ** Loading Animation Styles
 */
-
 #loader {
   display: flex;
   justify-content: center;
@@ -87,6 +76,7 @@ h1 {
   from {
     transform: translateY(30px);
   }
+
   to {
     transform: translateY(0px);
   }
@@ -103,21 +93,20 @@ h1 {
 /*
 ** Navbar Styles
 */
-
 #navbar {
-    position: relative;
-    background-color: var(--foreground-color);
-    padding: 10px;
-    list-style-type: none;
-    text-align: center;
+  position: relative;
+  background-color: var(--foreground-color);
+  padding: 10px;
+  list-style-type: none;
+  text-align: center;
 }
 
 #navbar li {
-    float: left;
-    width: auto;
-    padding: 20px;
-    margin: 2px 2px;
-    border-radius: 5px;
+  float: left;
+  width: auto;
+  padding: 20px;
+  margin: 2px 2px;
+  border-radius: 5px;
 }
 
 #navbar a {
@@ -126,7 +115,7 @@ h1 {
 }
 
 #navbar a:visited {
-  color:inherit;
+  color: inherit;
 }
 
 #navbar li:hover {
@@ -135,10 +124,9 @@ h1 {
 
 #navbar li.search {
   float: right;
-  
   padding: 0;
-  width: 15%; 
-  max-width: 350px; 
+  width: 15%;
+  max-width: 350px;
   min-width: 25px;
 }
 
@@ -154,7 +142,6 @@ h1 {
 /*
 ** Data Styles
 */
-
 .container {
   justify-content: center;
   max-width: 70%;
@@ -168,9 +155,9 @@ h1 {
 }
 
 #count-output {
-  background-color:#67706f;
-  border-radius:3px;
-  padding:2px 4px;
+  background-color: #67706f;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 
 .model-info {
@@ -201,16 +188,15 @@ h1 {
 /*
 ** Floating Button
 */
-
 .float-button {
-  position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right: 30px;
-	background-color:var(--text-color);
-  border-radius:50px;
-  text-align:center;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 30px;
+  background-color: var(--text-color);
+  border-radius: 50px;
+  text-align: center;
   display: none;
 }
 
@@ -220,21 +206,20 @@ h1 {
   vertical-align: middle;
 }
 
-.about {
+.about, .navigation, .contributors {
   padding: 20px;
   border-radius: 20px;
   font-size: 20px;
   background: var(--foreground-color);
 }
 
-.about ul {
+.contributors ul {
   padding: 10px 0;
 }
 
 /*
 ** Responsiveness
 */
-
 @media (min-width: 320px) and (max-width: 480px) {
   .container {
     max-width: 100%;
@@ -248,10 +233,10 @@ h1 {
     float: none;
   }
 
-  #navbar li.search{
+  #navbar li.search {
     width: 100%;
     float: left;
-    max-width: none; 
+    max-width: none;
     min-width: none;
   }
 

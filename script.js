@@ -26,7 +26,7 @@ async function loadList() {
       const notes = add();
 
       if (split(0) === "") return;
-      
+
       vendor.innerHTML = split(0);
       model.innerHTML = "Model: " + split(1);
       version.innerHTML = "Version: " + split(2);
@@ -69,37 +69,36 @@ async function loadEntryCount() {
   )
     .then((res) => res.text())
     .catch(() => "error");
-    
+
   if (result !== "error") {
     var lines = result.split("\n");
     const output = document.getElementById("count-output");
-    output.innerHTML = lines.length-2; // -2 because there are two dummy entries
+    output.innerHTML = lines.length - 2; // -2 because there are two dummy entries
   }
 }
 
 function search_entries() {
-  let base_element = document.getElementsByClassName('search')
-  let input = base_element[0].getElementsByTagName('input')[0].value
+  let base_element = document.getElementsByClassName("search");
+  let input = base_element[0].getElementsByTagName("input")[0].value;
   input = input.toLowerCase();
 
-  let data = document.getElementById('output').childNodes;
+  let data = document.getElementById("output").childNodes;
 
   for (i = 0; i < data.length; i++) {
     if (!data[i].innerHTML.toLowerCase().includes(input)) {
       data[i].style.display = "none";
-    }
-    else {
-      data[i].style.display="inline";
+    } else {
+      data[i].style.display = "inline";
     }
   }
 }
 
 $(window).scroll(function (event) {
-  var scrollButton = $("#scroll_button")
+  var scrollButton = $("#scroll_button");
   var scroll = $(window).scrollTop();
   if (scroll < 300) {
-    scrollButton.fadeOut()
+    scrollButton.fadeOut();
   } else {
-    scrollButton.fadeIn()
+    scrollButton.fadeIn();
   }
 });
