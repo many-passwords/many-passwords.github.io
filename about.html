@@ -30,22 +30,54 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  
+
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
-<body onload="loadEntryCount()" onscroll="check_scroll_button()">
+<body onload="loadEntryCount()" onscroll="check_scroll_button()" style="background: #2a2c2b;">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWX65X3" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <ul id="navbar">
-    <li class="selected"><a href="/">Home</a></li>
+
+    <!-- <li class="selected"><a href="/">Home</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md"
         target="_blank">Contributing</a></li>
     <li class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></li>
-    <div class="clear"></div>
-  </ul>
+    <div class="clear"></div> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"> <img style="height: 35px;" src="./images/favicon.png" > </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="width: 100%;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md">Contributing</a>
+          </li>
+          
+            <li class="search nav-item me-2" ><input onkeyup="search_entries()" type="text" placeholder="Search..." ></li>
+            <div class="clear"></div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
   <div class="container">
     <header>
       <h1>About us</h1>
