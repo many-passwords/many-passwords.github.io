@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Contact Us</title>
+    <meta name="description" content="Many passwords - default passwords for each devices. More about this project.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+
+    <ul id="navbar">
+        <li class="selected"><a href="/">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+        <li class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></li>
+        <div class="clear"></div>
+      </ul>
+
+    <div class="container">
+        <div class="row">
+                <h1>contact us</h1>
+        </div>
+        <form>
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" required />
+                        <label>Name</label> 
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" required />
+                        <label>Email</label> 
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="styled-input" id="checkbox">
+                        <input type="checkbox" id="SendCopyToEmail" name="SendCopyToEmail" value="Send copy to my email address">
+                        <label>Send a copy to my email address</label> 
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="btn-lrg submit-btn">Send Message</div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    
+    
+</body>
+</html>
