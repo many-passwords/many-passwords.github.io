@@ -119,7 +119,8 @@ h1, h2 {
 }
 
 #navbar li:hover {
-  background: var(--title-color);
+  background: var(--comment-color);
+  color: var(--background-color);
 }
 
 #navbar li.search {
@@ -156,9 +157,9 @@ h1, h2 {
 }
 
 #no-output {
-  text-align: center; 
-  color: var(--text-color); 
-  background: inherit; 
+  text-align: center;
+  color: var(--text-color);
+  background: inherit;
   font-size: small;
 }
 
