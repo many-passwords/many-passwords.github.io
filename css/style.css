@@ -26,6 +26,10 @@ h1, h2 {
   text-align: center;
 }
 
+p {
+  margin: 0;
+}
+
 #logo {
   max-width: 80%;
   margin: 15px;
@@ -93,52 +97,20 @@ h1, h2 {
 /*
 ** Navbar Styles
 */
-#navbar {
-  position: relative;
+
+.navbar {
   background-color: var(--foreground-color);
-  padding: 10px;
-  list-style-type: none;
-  text-align: center;
+  padding: 15px;
 }
 
-#navbar li {
-  float: left;
-  width: auto;
-  padding: 20px;
-  margin: 2px 2px;
+.navbar li {
   border-radius: 5px;
+  font-size: 2rem;
 }
 
-#navbar a {
-  text-decoration: none;
-  color: inherit;
-}
-
-#navbar a:visited {
-  color: inherit;
-}
-
-#navbar li:hover {
+.navbar li:hover {
   background: var(--comment-color);
   color: var(--background-color);
-}
-
-#navbar li.search {
-  float: right;
-  padding: 0;
-  width: 15%;
-  max-width: 350px;
-  min-width: 25px;
-}
-
-#navbar li.search input {
-  position: relative;
-  right: 40px;
-  border-radius: 5px;
-  border: none;
-  padding: 20px 20px;
-  text-overflow: ellipsis;
-  width: 100%;
 }
 
 /*

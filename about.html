@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -20,32 +21,61 @@
     })(window, document, 'script', 'dataLayer', 'GTM-NWX65X3');
   </script>
   <!-- End Google Tag Manager -->
+
   <meta charset="utf-8" />
   <link rel="icon" href="images/favicon.png" />
   <title>About | Many passwords</title>
   <meta name="description" content="Many passwords - default passwords for each devices. More about this project.">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/colors.css" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
 </head>
 
-<body onload="loadEntryCount()" onscroll="check_scroll_button()">
+<body onload="loadEntryCount()">
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWX65X3" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <ul id="navbar">
-    <li class="selected"><a href="/">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md"
-        target="_blank">Contributing</a></li>
-    <li class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></li>
-    <div class="clear"></div>
-  </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="search"><input class="form-control mr-sm-2" onkeyup="search_entries()" type="text" placeholder="Search..."></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Body -->
   <div class="container">
     <header>
       <h1>About us</h1>
@@ -98,7 +128,10 @@
     </section>
     <br><br><br><br>
   </div>
+
+  <!-- Custom JS -->
   <script src="./script.js"></script>
+
 </body>
 
 </html>
