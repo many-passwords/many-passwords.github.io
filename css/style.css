@@ -35,16 +35,21 @@ h1, h2 {
   clear: both;
 }
 
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+input:focus ~ label, input:valid ~ label {
   color: var(--text-color);
-  top: -1em;
-  left: 1em;
+  top: -0.8em;
+  left: 0.5em;
+  font-weight: lighter;
+  font-size: small;
   -webkit-transition: all 0.225s ease;
   transition: all 0.225s ease;
 }
 
+textarea:focus ~ label{
+  display: none;
+}
+
 .styled-input {
-  float: left;
   width: 293px;
   margin: 1rem 0;
   position: relative;
@@ -63,27 +68,30 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input.wide { 
-  width: 650px;
+  width: 100%;
   max-width: 100%;
 }
 
-input,
-textarea {
-  padding: 2em;
+.formInput, textarea {
   border: 0;
   width: 100%;
-  font-size: 1rem;
+  height: 5em;
   background-color: #3b3b3b;
   color: var(--text-color);
   border-radius: 4px;
+  text-indent: 2em;
 }
 
+input:focus { 
+  outline: 0; 
+  text-indent: 2em;
+}
 
-input:focus,
-textarea:focus { outline: 0; }
+textarea:focus {
+  text-indent: 2em;
+}
 
-input:focus ~ span,
-textarea:focus ~ span {
+input:focus ~ span, textarea:focus ~ span {
   width: 100%;
   -webkit-transition: all 0.075s ease;
   transition: all 0.075s ease;
@@ -92,11 +100,6 @@ textarea:focus ~ span {
 textarea {
   width: 100%;
   min-height: 10em;
-}
-
-.input-container {
-  width: 40em;
-  margin: 20px auto 25px auto;
 }
 
 .submit-btn {
@@ -120,17 +123,10 @@ textarea {
             0 1px 1px 0 rgba(0,0,0,0.09);
 }
 
-@media (max-width: 768px) {
-  .submit-btn {
-      width:100%;
-      float: none;
-      text-align:center;
-  }
-}
-
 input[type=checkbox] {
   width: 5%;
   height: 1.3em;
+  float: left;
 } 
 
 input[type=checkbox] + label {
@@ -141,6 +137,15 @@ font-style: italic;
 input[type=checkbox]:checked + label {
 color: #f00;
 font-style: normal;
+}
+.input-container {
+  text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .formInput {
+    width: 95%;
+  }
 }
 
 /*
