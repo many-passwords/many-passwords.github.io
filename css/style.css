@@ -90,6 +90,13 @@ h1, h2 {
 /*
 ** Navbar Styles
 */
+#navbar {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .topnav {
   overflow: hidden;
   background-color: var(--foreground-color);
@@ -133,15 +140,18 @@ h1, h2 {
 .topnav input {
   border-radius: 5px;
   padding: 20px;
+  margin-right: 20px;
 }
 
 /*
 ** Data Styles
 */
 .container {
+
   justify-content: center;
   max-width: 70%;
   margin: auto;
+  margin-top: 100px;
 }
 
 #output {
@@ -226,17 +236,19 @@ h1, h2 {
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
+    position: fixed;
+    top: 10px;
+    right: 10px;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: fixed;
+    right: 10px;
+    top: 10px;
   }
   .topnav.responsive a {
     float: none;
@@ -247,8 +259,8 @@ h1, h2 {
     padding: 0;
   }
   .topnav.responsive input {
-    width: 89%;
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 70px 20px 20px;
+    margin-left: 10px;
   }
 }
