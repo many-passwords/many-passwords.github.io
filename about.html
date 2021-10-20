@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -20,6 +21,7 @@
     })(window, document, 'script', 'dataLayer', 'GTM-NWX65X3');
   </script>
   <!-- End Google Tag Manager -->
+
   <meta charset="utf-8" />
   <link rel="icon" href="images/favicon.png" />
   <title>About | Many passwords</title>
@@ -30,22 +32,29 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload="loadEntryCount()" onscroll="check_scroll_button()">
+
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWX65X3" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <ul id="navbar">
-    <li class="selected"><a href="/">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <!-- <li><a href="contact.html">Contact Us</a></li> -->
-    <li><a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
-    <li class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></li>
-    <div class="clear"></div>
-  </ul>
+
+  <!-- Navbar -->
+  <div class="topnav" id="navbar">
+    <a href="/" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a>
+    <a class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Main Body -->
   <div class="container">
     <header>
       <h1>About us</h1>
