@@ -79,6 +79,10 @@ textarea:focus ~ label{
   text-indent: 2em;
 }
 
+textarea {
+  padding-top: 4rem;
+}
+
 input:focus { 
   outline: 0; 
   text-indent: 2em;
