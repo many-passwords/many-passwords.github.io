@@ -10,7 +10,7 @@ async function loadList() {
 
   if (result !== "error") {
     loader.remove();
-    var lines = result.split("\n");
+    var lines = result.split("\n").sort();
     let split = (x) => lines[line].split(",")[x];
     let add = () => document.createElement("p");
 
