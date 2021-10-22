@@ -12,58 +12,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <ul id="navbar">
-        <li class="selected"><a href="/">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
-        <li class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></li>
-        <div class="clear"></div>
+    <!-- Navbar -->
+    <div class="topnav" id="navbar" style="z-index: 1;">
+        <a href="/" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a>
+        <a href="contact.html">Contact Us</a>
+        <a class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-    </ul>
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <div class="container">
         <div class="row">
                 <h1>Contact us</h1>
         </div>
         <div class="row input-container">
-            <form action="">
+            <form action="https://formsubmit.co/ce7e222cdce429b2cbfe18f5cea0cec7" method="POST">
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <input class="formInput" type="text" required />
+                        <input class="formInput" type="text" name="name" required />
                         <label>Name</label>
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <input class="formInput" type="text" required />
+                        <input class="formInput" type="text" name="email" required />
                         <label>Email</label>
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <textarea class="formInput" required></textarea>
-                        <label>Message</label>
+                        <textarea class="formInput" name="message" required></textarea>
+                        <label class="textarealabel">Message</label>
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <div class="styled-input" id="checkbox">
-                        <input class="formInput" type="checkbox" id="SendCopyToEmail" name="SendCopyToEmail" value="Send copy to my email address">
-                        <label>Send a copy to my email address</label>
-                    </div>
-                </div>
-                <div class="col-xs-6">
-                    <div class="btn-lrg submit-btn">Send Message</div>
+                    <button type="submit" class="btn-lrg submit-btn">Send Message</button>
                 </div>
             </form>
         </div>
     </div>
 
-
+    <script src="./script.js"></script>
 </body>
 </html>
