@@ -28,3 +28,4 @@ Find out how you can contribute to this by checking the [CONTRIBUTING.md](https:
 - link to [CONTRIBUTING.md](https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md) file
 - adaptation for mobile devices
 - floating button go to the top
+- Contact Us section
