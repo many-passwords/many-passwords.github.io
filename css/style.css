@@ -348,6 +348,22 @@ font-style: normal;
   padding: 10px 0;
 }
 
+/* Dark Mode */
+.toggle {
+  float: left;
+  display: block;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  margin: 2px 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.dark-mode {
+  background-color: #FBF3E4;
+  color: black;
+}
+
 /*
 ** Responsiveness
 */
