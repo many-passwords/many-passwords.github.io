@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NWX65X3');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8" />
     <link rel="icon" href="images/favicon.png" />
     <title>Contact Us</title>
@@ -14,23 +35,30 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWX65X3" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
     <div class="topnav" id="navbar" style="z-index: 1;">
         <a href="/" class="active">Home</a>
         <a href="about.html">About Us</a>
-        <a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a>
+        <a href="https://github.com/many-passwords/many-passwords/blob/main/CONTRIBUTING.md"
+            target="_blank">Contributing</a>
         <a href="contact.html">Contact Us</a>
         <a class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
         </a>
     </div>
 
     <div class="container">
         <div class="row">
-                <h1>Contact us</h1>
+            <h1>Contact us</h1>
         </div>
         <div class="row input-container">
             <form action="https://formsubmit.co/ce7e222cdce429b2cbfe18f5cea0cec7" method="POST">
@@ -61,4 +89,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>

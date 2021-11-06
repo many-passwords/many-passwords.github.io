@@ -32,7 +32,7 @@ h1, h2 {
   margin: 15px;
 }
 
-input:focus ~ label, input:valid ~ label {
+input:focus~label, input:valid~label {
   color: var(--text-color);
   top: -0.8em;
   left: 0.5em;
@@ -42,7 +42,7 @@ input:focus ~ label, input:valid ~ label {
   transition: all 0.225s ease;
 }
 
-textarea:focus ~ label{
+textarea:focus~label {
   display: none;
 }
 
@@ -64,7 +64,7 @@ textarea:focus ~ label{
   pointer-events: none;
 }
 
-.styled-input.wide { 
+.styled-input.wide {
   width: 100%;
   max-width: 100%;
 }
@@ -83,8 +83,8 @@ textarea {
   padding-top: 4rem;
 }
 
-input:focus { 
-  outline: 0; 
+input:focus {
+  outline: 0;
   text-indent: 2em;
 }
 
@@ -92,7 +92,7 @@ textarea:focus {
   text-indent: 2em;
 }
 
-input:focus ~ span, textarea:focus ~ span {
+input:focus~span, textarea:focus~span {
   width: 100%;
   -webkit-transition: all 0.075s ease;
   transition: all 0.075s ease;
@@ -113,33 +113,32 @@ textarea {
   color: var(--text-color);
   font-size: 18px;
   cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
-            0 2px 10px 0 rgba(0,0,0,0.07);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
 .submit-btn:hover {
   transform: translateY(1px);
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
-            0 1px 1px 0 rgba(0,0,0,0.09);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
 }
 
 input[type=checkbox] {
   width: 5%;
   height: 1.3em;
   float: left;
-} 
-
-input[type=checkbox] + label {
-color: #ccc;
-font-style: italic;
-} 
-
-input[type=checkbox]:checked + label {
-color: #f00;
-font-style: normal;
 }
+
+input[type=checkbox]+label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type=checkbox]:checked+label {
+  color: #f00;
+  font-style: normal;
+}
+
 .input-container {
   text-align: center;
 }
@@ -153,6 +152,7 @@ font-style: normal;
 /*
 ** Loading Animation Styles
 */
+
 #loader {
   display: flex;
   justify-content: center;
@@ -191,7 +191,6 @@ font-style: normal;
   from {
     transform: translateY(30px);
   }
-
   to {
     transform: translateY(0px);
   }
@@ -208,6 +207,7 @@ font-style: normal;
 /*
 ** Navbar Styles
 */
+
 #navbar {
   overflow: hidden;
   position: fixed;
@@ -255,6 +255,7 @@ font-style: normal;
 .topnav a.search {
   padding: 0;
 }
+
 .topnav input {
   border-radius: 5px;
   padding: 20px;
@@ -264,8 +265,8 @@ font-style: normal;
 /*
 ** Data Styles
 */
-.container {
 
+.container {
   justify-content: center;
   max-width: 70%;
   margin: auto;
@@ -319,6 +320,7 @@ font-style: normal;
 /*
 ** Floating Button
 */
+
 .float-button {
   position: fixed;
   width: 60px;
@@ -351,8 +353,11 @@ font-style: normal;
 /*
 ** Responsiveness
 */
+
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     position: fixed;
     top: 10px;
@@ -362,7 +367,9 @@ font-style: normal;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: fixed;}
+  .topnav.responsive {
+    position: fixed;
+  }
   .topnav.responsive .icon {
     position: fixed;
     right: 10px;
