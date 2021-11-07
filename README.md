@@ -12,7 +12,7 @@ _Useful for fans of Shodan, Censys and Google dorks._
 
 This repository is responsible for the [project website](https://many-passwords.github.io).
 
-The main repo containing entries, thanks and sources is [here](https://github.com/many-passwords/many-passwords).
+The main repo containing entries, thanks, stats and sources is [here](https://github.com/many-passwords/many-passwords).
 
 ## Contributing
 
