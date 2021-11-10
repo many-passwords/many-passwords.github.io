@@ -7,10 +7,15 @@ async function loadList() {
 
   const loader = document.getElementById("loader");
   const output = document.getElementById("output");
+  const buttonsWrapper = document.querySelector(".buttons-wrapper"); // get button container div
+  const pwdCount = document.getElementById("password-count"); // password count button
 
   if (result !== "error") {
     loader.remove();
+    buttonsWrapper.style.display = "flex";
+
     var lines = result.split("\n");
+    pwdCount.innerHTML = `Passwords Count: ${lines.length - 1}`; // Count passwords
     let split = (x) => lines[line].split(",")[x];
     let add = () => document.createElement("p");
 
