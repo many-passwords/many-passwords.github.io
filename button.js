@@ -27,11 +27,13 @@ const downloadJSON = async () => {
     
     if (result !== "error") {
         const jsonString = csvToJSON(result);
-        const dataStr = `text/json;charset=utf-8,${encodeURIComponent(jsonString)}`;
+
+        // Using blob url to resolve the error
+        let uriContent = URL.createObjectURL(new Blob([jsonString], {type: 'text/json;charset=utf-8'}))
 
         // Create a link element to download json file
         const link = document.createElement("a");
-        link.href = dataStr;
+        link.href = uriContent;
         link.download = "passwords.json";
         link.click();
         link.remove()
