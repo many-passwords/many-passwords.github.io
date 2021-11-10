@@ -15,7 +15,7 @@ async function loadList() {
     buttonsWrapper.style.display = "flex";
 
     var lines = result.split("\n");
-    pwdCount.innerHTML = `Passwords Count: ${lines.length - 1}`; // Count passwords
+    pwdCount.innerHTML = `Passwords Count: ${lines.length - 2}`; // Count passwords
     let split = (x) => lines[line].split(",")[x];
     let add = () => document.createElement("p");
 
