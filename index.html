@@ -68,6 +68,21 @@
       <div class="circle"></div>
       <div class="circle"></div>
     </div>
+
+    <!-- Buttons -->
+    <div class="buttons-wrapper" style="display:none" >
+      <button class="submit-btn" onClick="downloadCSV()" >Download CSV</button>
+      <button class="submit-btn" onClick="downloadJSON()">Download JSON</button>
+      <a  
+        href="https://github.com/many-passwords/many-passwords" 
+        target="_blank"  
+        class="submit-btn" 
+        id="password-count"
+      >
+        Passwords count
+      </a href="">
+    </div>
+
     <div id="output"></div>
     <div id="no-output" style="display: none;">No results found. Please try again later.</div>
     <a id="scroll_button" href="#top" class="float-button">
@@ -75,6 +90,7 @@
     </a>
   </div>
   <script src="./script.js"></script>
+  <script src="./button.js"></script>
 </body>
 
 </html>

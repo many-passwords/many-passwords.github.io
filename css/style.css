@@ -389,3 +389,25 @@ input[type=checkbox]:checked+label {
     margin-left: 10px;
   }
 }
+
+.buttons-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.buttons-wrapper .submit-btn {
+  float: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-wrapper {
+    flex-direction: row;
+  }
+}
