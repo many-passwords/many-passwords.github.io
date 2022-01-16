@@ -35,3 +35,5 @@ Contribute by checking the [CONTRIBUTING.md](https://github.com/many-passwords/m
 - adaptation for mobile devices
 - floating button go to the top
 - Contact Us section
+- CSV and JSON download button
+- password count in home redirecting to main repo
