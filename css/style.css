@@ -106,7 +106,7 @@ textarea {
 .submit-btn {
   float: right;
   padding: 1em 2em;
-  border-radius: 10px;
+  border-radius: 20px;
   border: none;
   display: inline-block;
   background-color: var(--title-color);
@@ -116,6 +116,7 @@ textarea {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 }
 
 .submit-btn:hover {
@@ -232,6 +233,7 @@ input[type=checkbox]:checked+label {
   padding: 20px;
   margin: 2px 2px;
   border-radius: 5px;
+  transition: all .3s ease;
 }
 
 .topnav a.search {
@@ -260,6 +262,9 @@ input[type=checkbox]:checked+label {
   border-radius: 5px;
   padding: 20px;
   margin-right: 20px;
+  border-radius: 26px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 7px 29px 0px;
 }
 
 /*
@@ -294,14 +299,19 @@ input[type=checkbox]:checked+label {
 
 .model-info {
   box-shadow: 1px 1px 5px 0 var(--shadow-color);
-  padding: 15px;
+  padding: 20px;
   margin: 15px;
   background-color: var(--foreground-color);
   border-radius: 22px;
   font-size: 13px;
   overflow-wrap: break-word;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  transition: all .3s ease;
 }
+.model-info:hover{
+  transform: scale(1.1);
 
+}
 .model-info p:nth-child(1) {
   font-size: 25px;
   color: var(--title-color);
