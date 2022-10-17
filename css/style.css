@@ -365,7 +365,7 @@ input[type=checkbox]:checked+label {
 */
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
+  .topnav a:not(.search){
     display: none;
   }
   .topnav a.icon {
@@ -373,6 +373,13 @@ input[type=checkbox]:checked+label {
     top: 10px;
     right: 10px;
     display: block;
+  }
+  .topnav a.search {
+    float: left;
+  }
+  .topnav input {
+    border-radius: 2px;
+    margin-right: 0;
   }
 }
 
