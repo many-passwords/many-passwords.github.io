@@ -18,6 +18,8 @@ async function loadList() {
     pwdCount.innerHTML = `Passwords Count: ${lines.length - 2}`; // Count passwords
     let split = (x) => lines[line].split(",")[x];
     let add = () => document.createElement("p");
+    let addButton = () => document.createElement("button");
+    let addDiv = () => document.createElement("div");
 
     for (var line = 1; line < lines.length; line++) {
       const li = document.createElement("div");
@@ -29,6 +31,9 @@ async function loadList() {
       const password = add();
       const privileges = add();
       const notes = add();
+      const copyUsername = addButton();
+      const copyPassword = addButton();
+      const buttonContainer = addDiv();
 
       if (split(0) === "") return;
 
@@ -40,6 +45,13 @@ async function loadList() {
       password.innerHTML = "Password: " + split(5);
       privileges.innerHTML = "Privileges: " + split(6);
       notes.innerHTML = `<hr>${split(7)}`;
+      copyUsername.innerHTML = "<i class=\"fa fa-clone\" aria-hidden=\"true\"></i> <p>USERNAME</p>";
+      copyUsername.setAttribute("onClick","copyToClipBoard('"+split(4)+"',this,\"USERNAME\")");
+      copyUsername.setAttribute("class","copy-button");
+      copyPassword.innerHTML = "<i class=\"fa fa-clone\" aria-hidden=\"true\"></i> <p>PASSWORD</p>";
+      copyPassword.setAttribute("onClick","copyToClipBoard('"+split(5)+"',this,\"PASSWORD\")");
+      copyPassword.setAttribute("class","copy-button");
+      buttonContainer.setAttribute("class","button-container");
 
       li.setAttribute("class", "model-info");
       li.appendChild(vendor);
@@ -50,7 +62,9 @@ async function loadList() {
       li.appendChild(password);
       li.appendChild(privileges);
       li.appendChild(notes);
-
+      buttonContainer.appendChild(copyUsername);
+      buttonContainer.appendChild(copyPassword);
+      li.appendChild(buttonContainer)
       output.appendChild(li);
     }
   } else {
@@ -120,4 +134,19 @@ function myFunction() {
   } else {
     x.className = "topnav";
   }
+}
+
+function copyToClipBoard(value,button,usernameorpassword){
+
+  if(value=='<blank>'){
+    value='';
+  }
+  navigator.clipboard.writeText(value);
+  button.innerText = 'COPIED!';
+
+  setTimeout(()=>{
+    button.innerHTML = "<i class=\"fa fa-clone\" aria-hidden=\"true\"></i> <p>"+usernameorpassword+"</p>";
+  },3000);
+
+  console.log(value);
 }
