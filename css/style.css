@@ -237,8 +237,14 @@ input[type=checkbox]:checked+label {
 }
 
 .topnav a.search {
+  
   float: right;
 }
+
+input{
+  border-radius: 20px;
+}
+
 
 .topnav a:hover {
   background: var(--comment-color);
@@ -282,6 +288,7 @@ input[type=checkbox]:checked+label {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   width: 100%;
+  justify-content: center;
 }
 
 #no-output {
@@ -330,6 +337,10 @@ input[type=checkbox]:checked+label {
 /*
 ** Floating Button
 */
+button{
+  color: black;
+  background-color: white;
+}
 
 .float-button {
   position: fixed;
@@ -354,6 +365,48 @@ input[type=checkbox]:checked+label {
   border-radius: 20px;
   font-size: 20px;
   background: var(--foreground-color);
+}
+
+button.copy-button:hover{
+  background-color: #051855;
+  width: 76px ;
+  height: 10px;
+}
+
+button.copy-button{
+  transition: width 1s, height 4s, background-color 0.5s;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  
+}
+
+.copy-button{
+  font-weight: 900;
+  margin-top: 5px;
+  margin-right: 5px;
+  .fa{
+    margin-right: 5px;
+  }
+  padding: 7px;
+  width: 75px;
+  font-size: 10px;
+  border-radius: 50px;
+  background-color: #0037ff;
+  color: white;
+  border: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  i{
+    margin-right: 5px;
+  }
 }
 
 .contributors ul {
@@ -384,6 +437,20 @@ input[type=checkbox]:checked+label {
 }
 
 @media screen and (max-width: 600px) {
+
+  input{
+    border-radius: 20px;
+  }
+
+  .button-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copy-button{
+    width: 80%;
+  }
+
   .topnav.responsive {
     position: fixed;
   }
