@@ -222,6 +222,7 @@ input[type=checkbox]:checked+label {
   padding: 10px;
   list-style-type: none;
   text-align: center;
+  z-index: 10;
 }
 
 .topnav a {
@@ -314,6 +315,7 @@ input{
   overflow-wrap: break-word;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
   transition: all .3s ease;
+  z-index: 0;
 }
 .model-info:hover{
   transform: scale(1.1);
