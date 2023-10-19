@@ -45,10 +45,10 @@ async function loadList() {
       password.innerHTML = "Password: " + split(5);
       privileges.innerHTML = "Privileges: " + split(6);
       notes.innerHTML = `<hr>${split(7)}`;
-      copyUsername.innerHTML = "<i class=\"fa fa-clone\" aria-hidden=\"true\"></i> <p>USERNAME</p>";
+      copyUsername.innerHTML = "<i class=\"fa fa-clone\" aria-hidden=\"true\"></i>USERNAME";
       copyUsername.setAttribute("onClick","copyToClipBoard('"+split(4)+"',this,\"USERNAME\")");
       copyUsername.setAttribute("class","copy-button");
-      copyPassword.innerHTML = "<i class=\"fa fa-clone\" aria-hidden=\"true\"></i> <p>PASSWORD</p>";
+      copyPassword.innerHTML = "<i class=\"fa fa-clone\" aria-hidden=\"true\"></i>PASSWORD";
       copyPassword.setAttribute("onClick","copyToClipBoard('"+split(5)+"',this,\"PASSWORD\")");
       copyPassword.setAttribute("class","copy-button");
       buttonContainer.setAttribute("class","button-container");

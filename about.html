@@ -2,7 +2,18 @@
 <html lang="en" dir="ltr">
 
 <head>
-
+  <meta charset="utf-8" />
+  <link rel="icon" href="images/favicon.png" />
+  <title>About | Many passwords</title>
+  <meta name="description" content="Default credentials list.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/colors.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -21,22 +32,9 @@
     })(window, document, 'script', 'dataLayer', 'GTM-NWX65X3');
   </script>
   <!-- End Google Tag Manager -->
-
-  <meta charset="utf-8" />
-  <link rel="icon" href="images/favicon.png" />
-  <title>About | Many passwords</title>
-  <meta name="description" content="Default credentials list.">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/colors.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body onload="loadEntryCount()" onscroll="check_scroll_button()">
+<body onload="loadEntryCount()">
 
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWX65X3" height="0" width="0"
@@ -51,7 +49,7 @@
       target="_blank">Contributing</a>
     <a href="contact.html">Contact Us</a>
     <a class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="menu">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -64,8 +62,8 @@
     <section class="about">
       <p><em>Default passwords for IoT devices and for web applications (for ex. MySQL and PostgreSQL admin panels).</em> 🐱‍💻</p><br>
       <p><i>Useful for fans of </i><em>Shodan, Censys and Google dorks.</em></p><br>
-      <p><input type="checkbox" disabled="disabled" checked="checked"> &nbsp;in progress</p><br>
-      <p>More about the project <a href="https://github.com/many-passwords/many-passwords" target="_blank">here</a>.</p>
+      <p>☑️ in progress</p><br>
+      <p>More info about the project on <a href="https://github.com/many-passwords/many-passwords" target="_blank">Github</a>.</p>
     </section>
     <h2>Navigation</h2>
     <section class="navigation">
@@ -81,34 +79,34 @@
       <ul>
         <li><a href="https://github.com/MarcelCoding">@MarcelCoding</a> - <a
             href="https://github.com/many-passwords/many-passwords/pull/49">created Github Action</a> which streamlined
-          and accelerated the work;</li><br>
+          and accelerated the work;</li>
         <li><a href="https://github.com/Mpcs">@Mpcs</a> - <a
             href="https://github.com/many-passwords/many-passwords/pull/41">made very big changes to the project
             website</a> - change of appearance, grid layout, search bar, navigation bar, About Us
-          page, floating button go to the top, link to repo (contributing button), cleaner code;</li><br>
+          page, floating button go to the top, link to repo (contributing button), cleaner code;</li>
         <li><a href="https://github.com/alenquer">@alenquer</a> - <a
             href="https://github.com/many-passwords/many-passwords/pull/37">created the first version</a> of the project
-          page;</li><br>
+          page;</li>
         <li><a href="https://github.com/secondl1ght">@secondl1ght</a> - <a
             href="https://github.com/many-passwords/many-passwords.github.io/pull/1">semantic, accessibility, styling
             and DRY
             improvements</a> and <a href="https://github.com/many-passwords/many-passwords.github.io/pull/2">format code
             in all
-            files</a> to be cleaner;</li><br>
+            files</a> to be cleaner;</li>
         <li><a href="https://github.com/zeno4ever">@zeno4ever</a> - <a
             href="https://github.com/many-passwords/many-passwords/pull/60">adding a lot of ip cameras</a>, over 50
-          entries;</li><br>
+          entries;</li>
         <li><a href="https://github.com/noraj">@noraj</a> - <a
             href="https://github.com/many-passwords/many-passwords/pulls?q=is%3Apr+author%3Anoraj+is%3Aclosed">adding
-            many entries and helping sanitize the database;</a></li><br>
+            many entries and helping sanitize the database;</a></li>
         <li><a href="https://github.com/Glowstik-YT">@Glowstik-YT</a> - <a
-            href="https://github.com/many-passwords/many-passwords/pull/80">created new logo;</a></li><br>
+            href="https://github.com/many-passwords/many-passwords/pull/80">created new logo;</a></li>
         <li><a href="https://github.com/SurendarSingh">@SurendarSingh</a> and <a
             href="https://github.com/rahulbhatt1899">@rahulbhatt1899</a> - added contact form <a
             href="https://github.com/many-passwords/many-passwords.github.io/pull/14">pull/14</a> and <a
-            href="https://github.com/many-passwords/many-passwords.github.io/pull/8">pull/8;</a></li><br>
+            href="https://github.com/many-passwords/many-passwords.github.io/pull/8">pull/8;</a></li>
         <li><a href="https://github.com/NgoQuocBao1010">@NgoQuocBao1010</a> - <a
-            href="https://github.com/many-passwords/many-passwords.github.io/issues/20">added buttons for downloads passwords to CSV and JSON file and displaying the number of collected passwords on the home page;</a></li><br>
+            href="https://github.com/many-passwords/many-passwords.github.io/issues/20">added buttons for downloads passwords to CSV and JSON file and displaying the number of collected passwords on the home page;</a></li>
         <li><a href="https://github.com/many-passwords/many-passwords/graphs/contributors">@all contributors</a> - I
           cannot list all of you, thank you all for your contribution!</li>
       </ul>

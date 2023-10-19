@@ -1,7 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Contact Us | Many passwords</title>
+    <meta name="description" content="Default credentials list.">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Google Tag Manager -->
     <script>
@@ -21,19 +33,6 @@
         })(window, document, 'script', 'dataLayer', 'GTM-NWX65X3');
     </script>
     <!-- End Google Tag Manager -->
-
-    <meta charset="utf-8" />
-    <link rel="icon" href="images/favicon.png" />
-    <title>Contact Us | Many passwords</title>
-    <meta name="description" content="Default credentials list.">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/colors.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -51,7 +50,7 @@
             target="_blank">Contributing</a>
         <a href="contact.html">Contact Us</a>
         <a class="search"><input onkeyup="search_entries()" type="text" placeholder="Search..."></a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="menu">
             <i class="fa fa-bars"></i>
         </a>
     </div>
@@ -64,20 +63,20 @@
             <form action="https://formsubmit.co/michalp2404@gmail.com" method="POST">
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <input class="formInput" type="text" name="name" required />
-                        <label>Name</label>
+                        <input class="formInput" type="text" name="name" id="name" required />
+                        <label for="name">Name</label>
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <input class="formInput" type="text" name="email" required />
-                        <label>Email</label>
+                        <input class="formInput" type="text" name="email" id="email" required />
+                        <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="col-xs-12">
                     <div class="styled-input wide">
-                        <textarea class="formInput" name="message" required></textarea>
-                        <label class="textarealabel">Message</label>
+                        <textarea class="formInput" name="message" id="message" required></textarea>
+                        <label for="message" class="textarealabel">Message</label>
                     </div>
                 </div>
                 <div class="col-xs-6">
