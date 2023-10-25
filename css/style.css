@@ -177,17 +177,17 @@ input[type=checkbox]:checked+label {
 }
 
 .circle:first-child {
-  background-color: #a10702;
+  background-color: #051855;
   animation-delay: 0s;
 }
 
 .circle:nth-child(2) {
-  background-color: #f44708;
+  background-color: #7289da;
   animation-delay: 0.2s;
 }
 
 .circle:nth-child(3) {
-  background-color: #faa613;
+  background-color: #a1b7ba;
   animation-delay: 0.4s;
   margin-right: 0px;
 }
