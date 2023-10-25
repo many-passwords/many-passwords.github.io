@@ -42,7 +42,7 @@
 
       <!-- Navbar -->
     <div class="topnav" id="navbar">
-        <a href="/" class="active">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About Us</a>
         <a href="contributing.html">Contributing</a>
         <a href="contact.html">Contact Us</a>
@@ -55,8 +55,34 @@
     <!-- Main Body -->
     <div class="container">
         <header>
-          <h1>About us</h1>
+          <h1>Contributing</h1>
         </header>
+        <section class="contribution">
+          <h3>How you can help</h3>
+          <ul>
+            <li>Submit pull requests with new default passwords (see guidelines below) or snippet updates (notes, typos, incorrect data, etc).</li>
+            <li>Submit pull requests with project website improvement, corrections and other things about the page (website files are in the <a href="https://github.com/many-passwords/many-passwords.github.io">website repository</a>).</li>
+            <li>Submit pull requests or open issues with your ideas to improve the project.</li>
+            <li>Open issues for things you want to see added, modified or help out with existing issues (for example: Have you noticed a typo but don't know how to fix it? Write about it in the <a href="https://github.com/many-passwords/many-passwords/issues/new">issue</a>.)</li>
+            <li>Fix unresolved issues from <a href="https://github.com/many-passwords/many-passwords.github.io/labels/help%20wanted">here</a></li>
+            <li>Do you have any other ideas to help? Feel free to!</li>
+          </ul>
+        </section>
+        <br><br><br><br>
+        <section class="contribution">
+          <h3>Ground rules</h3>
+          Credentials are stored as a CSV file. You can see them in <a href="https://github.com/many-passwords/many-passwords/blob/main/passwords.csv">this file</a> or on the <a href="https://many-passwords.github.io">project page</a>. <br><br>
+          <strong>If you want to add something new please first create an issue.</strong> <br><br>
+          The project uses GitHub Action to sort alphabetically and update the number of passwords in the README file. So you don't have to do it manually. <br><br>
+          In order for the CSV file to be displayed correctly by Github, follow the scheme below: <br><br>
+          <code>Version,Model,Version,Access Type,Username,Passwords,Privileges,Notes</code><br><br>
+          Example:<br><br>
+          <code>3COM,Wireless AP,ANY,Multi,admin,comcomcom,Admin,Works on all 3com wireless APs</code> <br><br>
+          will be displayed:  <br><br>
+          <a href="https://cdn.discordapp.com/attachments/574604364342231052/765893402176126976/unknown.png" alt="Example display"><img src="https://cdn.discordapp.com/attachments/574604364342231052/765893402176126976/unknown.png" width="1000px"></a>
+          If the record is blank and it is a password or username, type <code>&lt;blank&gt;</code>. Otherwise, leave the field blank.<br><br>
+          You don't have to worry that something has gone wrong. We will be happy to help if you open a PR or issue.
+        </section>
         <br><br><br><br>
     </div>
     <script src="./script.js"></script>

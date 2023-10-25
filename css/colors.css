@@ -1,7 +1,8 @@
 :root {
   --title-color: #7289da;
-  --background-color: #2A2C2B;
+  --background-color: #222222;
   --foreground-color: #374140;
+  --nav-color: #3a0080;
   --text-color: #BDC3C7;
   --comment-color: #91bad6;
 }
