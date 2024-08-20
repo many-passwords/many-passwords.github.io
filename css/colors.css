@@ -1,7 +1,7 @@
 :root {
-  --title-color: #7289da;
-  --background-color: #2A2C2B;
-  --foreground-color: #374140;
-  --text-color: #BDC3C7;
-  --comment-color: #91bad6;
+    --title-color: #0eb1d2;
+    --background-color: #2a2c2b;
+    --foreground-color: #374140;
+    --text-color: #ece6d8;
+    --comment-color: #ffcdc2;
 }
